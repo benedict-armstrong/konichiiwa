@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "rootDir": "./src/app",
+      "outDir": "./build",
+      "esModuleInterop": true,
+      "strict": true,
+      "resolveJsonModule": true,
+      "baseUrl": "",
+        "paths": {
+            "service/*": [ "app/service/*"],
+        }
+    }
+  }

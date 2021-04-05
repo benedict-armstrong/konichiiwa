@@ -1,0 +1,144 @@
+.product-img-detail {
+    width: 100%;
+    margin: 20pt 0pt;
+    border-radius: 6pt;
+}
+
+.product-details {
+    padding: 0pt 30pt;
+    margin-top: 50pt;
+}
+
+.img-picker img {
+    display: inline;
+    height: 70pt;
+    border: none;
+    border-radius: 3pt;
+    margin: 0pt 5pt;
+}
+
+.img-picker img.active {
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.img-picker img:hover {
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.img-picker img.active:hover {
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.size-selector {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-size {
+    background-color: black;
+    color: white;
+    border: 4px solid black;
+    min-width: 50pt;
+}
+
+.btn-size:hover {
+    border: 4px solid rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+}
+
+.btn-size:active {
+    background-color: white;
+    color: black;
+}
+
+.btn-size.active {
+    background-color: white;
+    color: red;
+}
+
+.btn-checkout {
+    border: 4px solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.btn-checkout:hover {
+    border: 4px solid rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 4px solid black;
+
+    width: 100%;
+    height: 44px;
+    -moz-padding-start: calc(10px - 3px);
+    padding-left: 8pt;
+    background: white;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+select:active {
+    border: none;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select-wrapper {
+    width: 200px;
+    position: relative;
+    margin: 0pt 0pt;
+}
+
+select option {
+    color: black;
+}
+
+select:focus::-ms-value {
+    background-color: transparent;
+}
+
+.select-wrapper::after {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: black;
+    pointer-events: none;
+}
+
+.shipping-wrapper {
+    margin: 10pt 0pt;
+    font-size: 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 320px;
+}
+
+@media (max-width: 500px) {
+
+    .shipping-wrapper {
+        width: 100%;
+    }
+
+    .size-selector {
+        width: 100%;
+    }
+
+}

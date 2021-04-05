@@ -1,0 +1,134 @@
+body {
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: white !important;
+    align-items: center;
+    /* border-bottom: 1pt solid black; */
+}
+
+.navbar-brand {
+    color: black !important;
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-kerning: 10pt !important;
+}
+
+.nav-item a {
+    color: black !important;
+}
+
+.main {
+    padding-top: 70pt;
+    min-height: 90vh;
+}
+
+.product {
+    border: none;
+    border-radius: 0px;
+    position: relative;
+}
+
+/* .product::before {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    background-color: black;
+    color: white;
+    padding: 2pt 5pt;
+    content: var(--price);
+    font-family: monospace;
+} */
+
+.product .img-wrapper {
+    padding: 10pt;
+
+}
+
+
+.product .img-wrapper:hover {
+    padding: 7pt 7pt;
+    cursor: pointer;
+}
+
+
+
+.overlay .active {
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    .product .img-wrapper {
+        border: none;
+        padding: 5pt 0pt;
+    }
+
+    .product .img-wrapper:hover {
+        padding: 5pt 0pt;
+    }
+
+    .product::before {
+        visibility: hidden;
+    }
+}
+
+.footer {
+    background-color: white;
+    margin-top: 40pt;
+    padding: 20pt 0pt;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.back-button {
+    color: black;
+    font-size: 14pt;
+
+}
+
+.back-button:hover {
+    color: black;
+}
+
+.back-link i {
+    margin: 0pt 5pt;
+}
+
+.back-link {
+    color: black;
+    font-size: 10pt;
+    text-decoration: underline;
+}
+
+.back-link:hover {
+    color: black;
+}
+
+.back-button-about {
+    color: black;
+    font-size: 12pt;
+}
+
+.back-button-about:hover {
+    color: black;
+}
+
+.sold-out::after {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    background-color: black;
+    color: white;
+    padding: 2pt 5pt;
+    content: "Sold out";
+    font-family: monospace;
+}

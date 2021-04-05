@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="faviconms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.95" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Konichiiwa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/product.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/loading.css">
+
+    <script src="https://kit.fontawesome.com/623ba74de4.js" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-907MW9HGF3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-907MW9HGF3');
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand smooth-scroll" href="/">
+            <!-- <img class="logo" src="images/Kranich_no_ring_no_bg_white.png" height="35" alt=""> -->
+            Konichiiwa.
+        </a>
+    </nav>
+
+
+    <div class="main">
+        <div class="container">
+            <a class="back-button" href="/"><i class="fas fa-arrow-left"></i> Back</a>
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <div class="main-img">
+                        <img class="product-img-detail" src="" alt="Hoodie">
+                    </div>
+                    <div class="img-picker">
+                    </div>
+                </div>
+
+                <div class="col-md-7 product-details">
+                    <h2 id="product-name">Konichiiwa Hoodie</h2>
+                    <p><span class="price">0</span>€</p>
+                    <p class="size">Available Sizes:</p>
+                    <div class="size size-selector">
+                    </div>
+                    <div class="shipping-wrapper">
+                        <div>Shipping to:</div>
+                        <div class="select-wrapper">
+                            <select id="shipping-sel">
+                                <option type="none" price="0">Select option</option>
+                                <!-- <option type="pickup" price="0">Vienna 2€</option> -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <p id="selected-info">Selected Size: <span id="selected-size">M</span> | Color: <span id="selected-color">Blue</span></p>
+
+                    <input type="checkbox" id="tc" name="tc1" value="checked">
+                    <label for="tc1"> I accept the <a href="/terms">Terms & Conditions</a></label><br>
+
+                    <a class="btn btn-checkout" id="checkout-button">Buy <span id="final-price" class="price">0</span>€</a>
+                    <div class="lds-dual-ring hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="conatiner-fluid footer">
+        <div class="container text-center">
+            <a href="https://www.instagram.com/officialkonichiiwa/">🥀</a>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Schnitzel">Vienna, Austria</a>
+            <p>We ship to all 27 EU countries</p>
+            <p>Contact us <a href="https://instagram.com/officialkonichiiwa">here</a></p>
+            <a href="/impressum">Impressum</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

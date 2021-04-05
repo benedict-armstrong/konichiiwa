@@ -1,0 +1,44 @@
+.product {
+  border: none;
+  border-radius: 0px;
+  position: relative;
+}
+
+.product .img-wrapper {
+  padding: 10pt;
+}
+
+.product .img-wrapper:hover {
+  padding: 7pt 7pt;
+  cursor: pointer;
+}
+
+.overlay .active {
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .product .img-wrapper {
+    border: none;
+    padding: 5pt 0pt;
+  }
+
+  .product .img-wrapper:hover {
+    padding: 5pt 0pt;
+  }
+
+  .product::before {
+    visibility: hidden;
+  }
+}
+
+.sold-out::after {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  background-color: black;
+  color: white;
+  padding: 2pt 5pt;
+  content: "Sold out";
+  font-family: monospace;
+}

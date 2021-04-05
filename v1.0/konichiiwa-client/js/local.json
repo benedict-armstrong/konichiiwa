@@ -1,0 +1,192 @@
+[
+        {   
+            "id": 1,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Light Blue","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "FFFFFF"},
+            "background_color": "D4EAFD",
+            "images": ["/products/1-0.jpg", "/products/1-1.jpg"],
+            "thumbnails":["/thumbnails/blue.jpg"],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 2,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Black","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "FFFFFF"},
+            "background_color": "BDBEBF",
+            "images": ["/products/2-0.jpg", "/products/2-1.jpg"],
+            "thumbnails":["thumbnails/black.jpg"],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 3,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Yellow","hex-value": ""},
+            "secondary_color": {"name":"Black","hex-value": "000000"},
+            "background_color": "EAD59A",
+            "images": ["/products/3-0.jpg", "/products/3-1.jpg"],
+            "thumbnails":[],
+            "availability": true,
+            "show": false,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 4,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Red","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "FFFFFF"},
+            "background_color": "D4596E",
+            "images": ["/products/4-0.jpg", "/products/4-1.jpg"],
+            "thumbnails":["/thumbnails/red.jpg"],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 5,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"White","hex-value": ""},
+            "secondary_color": {"name":"Black","hex-value": "000000"},
+            "background_color": "FFFFFF",
+            "images": ["/products/4-0.jpg", "/products/4-1.jpg"],
+            "thumbnails":[],
+            "availability": true,
+            "show": false,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 6,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Gray","hex-value": ""},
+            "secondary_color": {"name":"Blue","hex-value": ""},
+            "background_color": "D1D2D3",
+            "images": ["/products/6-0.jpg", "/products/6-1.jpg"],
+            "thumbnails":["/thumbnails/gray5.jpg"],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 7,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Green","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "000000"},
+            "background_color": "CFFFCC",
+            "images": ["/products/green.jpg"],
+            "thumbnails":[],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 8,
+            "name": "Konichiiwa Hoodie",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 3800},
+            "size": ["M","L","XL","XXL"],
+            "primary_color": {"name":"Orchid","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "000000"},
+            "background_color": "FFD6F3",
+            "images": ["/products/orchid.jpg"],
+            "thumbnails":[],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 400, "text": "Austria 4€"},
+                {"type": "DE", "price": 1000, "text": "Germany 10€"},
+                {"type": "EU", "price": 1500, "text": "EU (+CH) 15€"}
+            ]
+        },
+        {   
+            "id": 9,
+            "name": "Konichiiwa tote bag",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 350},
+            "size": [],
+            "primary_color": {"name":"Pink","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "000000"},
+            "background_color": "FFFFFF",
+            "images": ["/products/tote.jpg"],
+            "thumbnails":[],
+            "availability": true,
+            "show": true,
+            "shipping_options": [
+                {"type": "AT", "price": 100, "text": "Austria 1€"},
+                {"type": "DE", "price": 300, "text": "Germany 3€"},
+                {"type": "EU", "price": 300, "text": "EU (+CH) 3€"}
+            ]
+        },
+        {   
+            "id": 10,
+            "name": "Konichiiwa tote bag",
+            "description": "printed in Vienna",
+            "price": {"currency": "eur","value": 350},
+            "size": [],
+            "primary_color": {"name":"Purple","hex-value": ""},
+            "secondary_color": {"name":"White","hex-value": "000000"},
+            "background_color": "FFFFFF",
+            "images": ["/products/tote_navy.jpg"],
+            "thumbnails":[],
+            "availability": true,
+            "show": false,
+            "shipping_options": [
+                {"type": "AT", "price": 100, "text": "Austria 1€"},
+                {"type": "DE", "price": 300, "text": "Germany 3€"},
+                {"type": "EU", "price": 300, "text": "EU (+CH) 3€"}
+            ]
+        }
+]
