@@ -4,7 +4,7 @@ import { Product } from 'src/DTO/product';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
-const baseUri = environment.backendUrl + 'product';
+const baseUri = environment.backendUrl + 'products';
 
 @Injectable({
   providedIn: 'root',

@@ -1,0 +1,14 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/", "dist/", "coverage/"],
+  "watch": ["src/"],
+  "execMap": {
+    "ts": "node -r ts-node/register"
+  },
+  "env": {
+    "NODE_ENV": "development",
+    "STRIPE_KEY": "sk_test_51HWoe8AHin6MlcyGnRdMo2Xyq1TGmFSNVI9yyEbx9QwXhoPvnQLsrV1dBvodj7kCkPFCX0rYZenwy3R2AuAwtVTB00wpFojJ2G",
+    "DOMAIN": "https://staging.konichiiwa.com"
+  },
+  "ext": "js,json,ts"
+}

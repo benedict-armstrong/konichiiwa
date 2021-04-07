@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@service/*": ["service/*"],
+      "@model/*": ["model/*"],
+      "@router/*": ["router/*"],
+      "@mail/*": ["mail/*"],
+      "@error/*": ["error/*"],
+      "@validation/*": ["validation/*"]
+    }
+  }
+}

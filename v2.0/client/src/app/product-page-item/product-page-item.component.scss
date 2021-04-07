@@ -13,10 +13,6 @@
   cursor: pointer;
 }
 
-.overlay .active {
-  color: black;
-}
-
 @media (max-width: 1200px) {
   .product .img-wrapper {
     border: none;
@@ -30,6 +26,10 @@
   .product::before {
     visibility: hidden;
   }
+}
+
+.sold-out img {
+  opacity: 0.6;
 }
 
 .sold-out::after {

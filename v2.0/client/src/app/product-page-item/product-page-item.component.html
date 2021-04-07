@@ -1,5 +1,7 @@
 <div class="card product h-100 fade-in">
-    <div class="img-wrapper">
-        <img class="card-img-top product-img" [src]="'assets' + product.images[0]" alt="{{product.name}}" [routerLink]="['product', product.id]">
+    <div class="img-wrapper" [ngClass]="{'sold-out': !product.availability}">
+        <img class="card-img-top product-img"
+            [src]="'assets/' + (product.thumbnails[0] ? product.thumbnails[0] : product.images[0])"
+            alt="{{product.name}}" [routerLink]="['product', product.id]">
     </div>
 </div>

@@ -1,41 +1,50 @@
-<a class="back-button" [routerLink]="['']"><i class="fas fa-arrow-left"></i> Back</a>
-<div class="row">
+<a class="back-button" [routerLink]="['']">Back</a>
+<div class="text-center" [hidden]="product.show">This product is currently not available</div>
+<div class="row" [hidden]="!product || !product.show">
     <div class="col-md-5 text-center">
         <div class="main-img">
-            <img class="product-img-detail" [src]="'assets' + product.images[0]" alt="{{product.name}}">
+            <img class="product-img-detail" [src]="'assets/' + this.selected_image" alt="{{product.name}}">
         </div>
         <div class="img-picker">
-            <img *ngFor="let img of product.images" class="active" [src]="'assets' + img" alt="image missing">
+            <img *ngFor="let img of product.images" class="active" [src]="'assets/' + img" alt="image missing"
+                (click)="this.selected_image = img">
         </div>
     </div>
 
     <div class="col-md-7 product-details">
         <h2 id="product-name">{{product.name}}</h2>
+        <h5 id="product-description">{{product.description}}</h5>
         <p><span class="price">{{product.price.value / 100 | currency:'EUR'}}</span></p>
         <div class="size" *ngIf="product.size.length">
             <p>Available Sizes:</p>
             <div class="size-selector">
-                <button *ngFor="let size of product.size" class="btn btn-size" (click)="this.selected_size = size" [ngClass]="{'active' : this.selected_size == size}">{{size}}</button>
+                <button *ngFor="let size of product.size" class="btn btn-size" (click)="this.selected_size = size"
+                    [ngClass]="{'active' : this.selected_size == size}">{{size}}</button>
             </div>
         </div>
-
-        <div class=" shipping-wrapper">
-            <div>Shipping to:</div>
-            <div class="select-wrapper">
-                <select [(ngModel)]="selected_shipping_option" (ngModelChange)="this.calculatePrice()">
-                    <option *ngFor="let shipping of this.product.shipping_options" [ngValue]="shipping">
-                        {{shipping.text}}
-                    </option>
-                </select>
+        <div [hidden]="!product.availability">
+            <div class=" shipping-wrapper">
+                <div>Shipping to:</div>
+                <div class="select-wrapper">
+                    <select [(ngModel)]="selected_shipping_option" (ngModelChange)="this.calculatePrice()">
+                        <option *ngFor="let shipping of this.product.shipping_options" [ngValue]="shipping">
+                            {{shipping.text}}
+                        </option>
+                    </select>
+                </div>
             </div>
+
+            <p *ngIf="this.selected_size">Selected Size: {{this.selected_size}} | Color:
+                {{this.product.primary_color.name}}
+            </p>
+
+            <input type="checkbox" id="tc" name="tc" [(ngModel)]="tc">
+            <label for="tc"> I accept the <a [routerLink]="['/terms']">Terms & Conditions</a></label><br>
+
+            <a class="btn btn-checkout" (click)="createNewCheckoutSession()" [hidden]="this.checkout_clicked">Continue
+                {{price / 100 | currency:'EUR'}}</a>
+            <div class="lds-dual-ring" [hidden]="!this.checkout_clicked"></div>
         </div>
-
-        <p *ngIf="this.selected_size">Selected Size: {{this.selected_size}} | Color: {{this.product.primary_color.name}}</p>
-
-        <input type="checkbox" id="tc" name="tc">
-        <label for="tc"> I accept the <a [routerLink]="['terms']">Terms & Conditions</a></label><br>
-
-        <a class="btn btn-checkout">Buy {{price / 100 | currency:'EUR'}}</a>
-        <div class="lds-dual-ring hidden"></div>
+        <div class="text-center" [hidden]="product.availability"><span class="sold-out">Sold Out</span></div>
     </div>
 </div>
