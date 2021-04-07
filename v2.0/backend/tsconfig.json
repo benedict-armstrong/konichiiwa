@@ -14,7 +14,8 @@
       "@router/*": ["router/*"],
       "@mail/*": ["mail/*"],
       "@error/*": ["error/*"],
-      "@validation/*": ["validation/*"]
+      "@validation/*": ["validation/*"],
+      "@util/*": ["util/*"]
     }
   }
 }
